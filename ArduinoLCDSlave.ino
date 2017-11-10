@@ -78,7 +78,7 @@ void printToLCD(String text) {
   else if (text.length() > 16)
   {
     Serial.println(text.substring(15, 17));
-    if (isSpace(text.charAt(15)) || isSpace(text.charAt(16))) {
+    if (isSpace(text.charAt(15)) || isSpace(text.charAt(16)) || isSpace(text.charAt(17))) {
       Serial.println("space found");
       line1 = text.substring(0, 15);
       line2 = text.substring(16, text.length());
